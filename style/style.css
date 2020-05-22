@@ -1,0 +1,204 @@
+@import url('./font.css');
+html {
+    /* Theme colors */
+    --color-light: #ddd;
+    --text-grey: #343E3D;
+    --primary-color: #AEDCC0;
+    --secondary-color: rgb(74, 134, 84);
+    --tertiary-color: #38E4AE;
+    --bg-color: #0f0f0f;
+    --text-dark-light: #607466;
+    --mid-night: #104f55;
+    /* Gradient Color */
+    --sky : background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    /* 1rem == 1px */
+    font-size: 62.5%;
+    /* Font values */
+    --Abel : Abel, cursive;
+    --Anton : Anton-Regular, cursive;
+    --Josefin : JosefinSans-VariableFont_wght, cursive;
+    --Lexend : LexendDeca-Regular, cursive;
+    --Livvic : Livvic-Black, cursive;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* Global classes */
+h1 {
+    font-size: 6rem;
+    font-family: var(--Lexend);
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-family: var(--Lexend);
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+h5 {
+    font-size: 2.4rem;
+}
+h6, p {
+    font-size: 1.8rem;
+}
+.mg-sm {
+    margin: 1.5rem;
+}
+.mg-md {
+    margin: 3rem;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+.list-none {
+    list-style: none;
+}
+.text-light {
+    color: var(--color-light);
+}
+.text-gray {
+    color: var(--text-grey);
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+i {
+    color: var(--secondary-color);
+}
+.btn {
+    color: var(--mid-night);
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    background-color: var(--tertiary-color);
+    border-radius: 3.2rem;
+    padding: 1.6rem 4.8rem;
+    font-family: var(--Livvic);
+    position: relative;
+    text-transform: uppercase;
+    transition: all .2s;
+    cursor: pointer; 
+}
+.btn:hover {
+    transform: translateY(-0.5rem);
+    border: 1px solid var(--mid-night);
+} 
+/* Navigation */
+.nav {
+    height: 0rem;
+    min-height: 10vh;
+    padding: 1rem;
+    font-family: var(--Abel);
+    overflow: hidden;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.nav .nav-menu {
+    position: relative;
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .nav-item {
+    padding: 1rem 1.6rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+.nav .nav-item:hover {
+    background-color: var(--mid-night);
+}
+.nav .nav-item:hover a{
+    color:var(--color-light)
+}
+.nav .social {
+    padding: 1.8rem 0;
+    font-size: 2.4rem;
+}
+.nav .social i {
+    padding: 0.5rem;
+}
+.nav .social i:hover {
+    color: var(--mid-night)
+}
+.nav-menu .nav-brand {
+    align-self: flex-start;
+}
+.nav .nav-brand a {
+    font-size: 3.2rem;
+    padding: 1.6rem 0;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: var(--Lexend);
+    letter-spacing: 2px;
+}
+.nav .toggle-collapse {
+    position: absolute;
+    width: 90%;
+    top: 1em;
+    cursor: pointer;
+    display: none;
+    outline: none;
+}
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.8rem 0;
+}
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 3em;
+}
+.collapse {
+    height: 100vh;
+}
+/* /Navigation */
+
+/* Main */
+
+/* Site hero */
+.site-title {
+    background-image: url('../assets/Background-image.png');
+    background-position: center;
+    background-repeat: none;
+    backdrop-filter: brightness(0.8);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* /Site hero */
+/* /Main */
+
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+html {
+    font-size: 60%;
+}
+.nav .nav-item{
+    padding: 1rem 0.8rem;
+}
+}
+@media only screen and (max-width: 750px) {
+    .nav .nav-menu, .nav .nav-items   {
+        flex-direction: column;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+/* /Media Queries */
