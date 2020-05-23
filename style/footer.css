@@ -1,0 +1,36 @@
+footer {
+    background-color: black;
+    color: white;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    justify-content: space-between;
+    align-items: flex-start;
+    grid-auto-rows: 1fr;
+}
+.footer > div {
+    padding: 2rem;
+}
+.instagram-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.instagram-pictures img {
+    width: 50px;
+    height: 50px;
+    margin: 0 2px;
+}
+.follow-us .social {
+    display: flex;
+    justify-content: space-around;
+}
+.text-white i{
+    color: white !important;
+    font-size: 3.2rem;
+}
+.footer h2 {
+    text-align: center;
+}
