@@ -1,6 +1,7 @@
 footer {
     background-color: black;
     color: white;
+    position: relative;
 }
 .footer {
     display: grid;
@@ -33,4 +34,11 @@ footer {
 }
 .footer h2 {
     text-align: center;
+}
+.move-up {
+    position: absolute;
+    right: 5%;
+    top:1%;
+    cursor: pointer;
+    /* transform: translate(-50%,-50%); */
 }

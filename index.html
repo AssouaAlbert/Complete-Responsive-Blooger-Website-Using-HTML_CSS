@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/categories.css">
     <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/aos.css">
     <link rel="stylesheet" href="./style/owl.carousel.min.css">
     <link rel="stylesheet" href="./style/owl.theme.default.min.css">
 </head>
@@ -47,8 +48,8 @@
     <main>
         <!-- Tittle Section -->
         <section class="site-title">
-            <div class="site-title__backgorund">
-                <h3 class="mg-sm text-light">Tours & Travel</h3>
+            <div class="site-title__backgorund" data-aos-delay="100"  data-aos="fade-up">
+                <h3 class="mg-sm text-light ">Tours & Travel</h3>
                 <h1 class="mg-sm text-light">Amazing Place on Earth</h1>
                 <button class="btn mg-md">Expand</button>
             </div>
@@ -58,7 +59,7 @@
         <!-- Blog Section -->
         <section class="blog">
             <div class="container">
-                <div class="owl-carousel owl-theme blog-post">
+                <div class="owl-carousel owl-theme blog-post" data-aos-delay="200"  data-aos="fade-up">
                     <div class="blog-content">
                         <img src="./assets/Blog-post/post-1.jpg" alt="post-1">
                         <div class="blog-title">
@@ -69,7 +70,7 @@
                             <span class="mt-md">2 minutes</span>
                         </div>
                     </div>
-                    <div class="blog-content">
+                    <div class="blog-content" data-aos-delay="200"  data-aos="fade-left">
                         <img src="./assets/Blog-post/post-3.jpg" alt="post-3">
                         <div class="blog-title">
                             <h4>London Fashion week's  continued the evolution</h4>
@@ -79,7 +80,7 @@
                             <span class="mt-md">2 minutes</span>
                         </div>
                     </div>
-                    <div class="blog-content">
+                    <div class="blog-content" data-aos-delay="200"  data-aos="fade-up">
                         <img src="./assets/Blog-post/post-5.png" alt="post-5">
                         <div class="blog-title">
                             <h4>London Fashion week's  continued the evolution</h4>
@@ -89,7 +90,7 @@
                             <span class="mt-md">2 minutes</span>
                         </div>
                     </div>
-                    <div class="blog-content">
+                    <div class="blog-content" data-aos-delay="200"  data-aos="fade-right">
                         <img src="./assets/Blog-post/post-2.jpg" alt="post-2">
                         <div class="blog-title">
                             <h4>London Fashion week's  continued the evolution</h4>
@@ -361,7 +362,7 @@
                 </div>
             </div>
         </div>
-        
+        <div class="move-up"><span><i class="fas fa-arrow-circle-up fa-2x"></i></span></div>
     </footer>
 <!-- /Footer Section-->
 
@@ -371,7 +372,8 @@
 <script src="./scripts/app.js" defer></script>
 <!-- Owl Carousel.js -->
 <script src="./scripts/owl.carousel.min.js"></script>
-
+<!-- AOS js -->
+<script src="./scripts/aos.js"></script>
 <script src="https://kit.fontawesome.com/29916b8676.js" crossorigin="anonymous" defer></script>
 
 </html>

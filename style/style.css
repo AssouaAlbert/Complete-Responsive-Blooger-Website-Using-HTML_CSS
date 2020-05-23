@@ -181,7 +181,7 @@ i {
     font-size: 3em;
 }
 .collapse {
-    height: 100vh;
+    height: 90vh;
 }
 /* /Navigation */
 
@@ -192,7 +192,7 @@ i {
     background-image: url('../assets/Background-image.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom left;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -206,7 +206,6 @@ i {
     background-repeat: no-repeat;
     background-position: top right;
     width: 100%;
-    height: 90vh;
 }
 .blog-content {
     background-color: rgba(255, 255, 255, 0.651);
@@ -227,7 +226,6 @@ i {
     display: block;
 }
 .container {
-    position: relative;
     margin: 1em 1rem; 
 }
 .owl-navigation {
@@ -235,7 +233,6 @@ i {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 9;
 }
 /* /Blog Section */
 /* Site Content  */
@@ -256,10 +253,12 @@ i {
     position: relative;
 }
 .post-caption {
+    text-align: center;
     position: absolute;
     bottom: 0;
     border-radius: 50px;
     left: 50%;
+    width: 70%;
     transform: translate(-50%,50%);
     padding: 1rem 3rem;
     background-image: var(--sky);
@@ -289,12 +288,15 @@ i {
 
 /* Media Queries */
 @media only screen and (max-width: 900px) {
-html {
-    font-size: 60%;
-}
-.nav .nav-item{
-    padding: 1rem 0.8rem;
-}
+    html {
+        font-size: 60%;
+    }
+    .nav .nav-item{
+        padding: 1rem 0.8rem;
+    }
+    .site-content {
+        margin: 0 1rem;
+    }
 }
 @media only screen and (max-width: 750px) {
     html {
@@ -305,12 +307,29 @@ html {
     }
     .site-content {
         margin: 1rem 1rem;
+        grid-template-columns: repeat(auto-fill, 100%)
     }
     .nav .nav-menu, .nav .nav-items   {
         flex-direction: column;
     }
     .nav .toggle-collapse {
         display: initial;
+    }
+    .post-caption {
+        width:70%;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .post-caption {
+        width:90%;
+        padding: 0.2rem 0.5rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .post-caption {
+        width:100%;
+        padding: 0.2rem 0.5rem;
     }
 }
 /* /Media Queries */
